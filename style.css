@@ -311,8 +311,11 @@ section {
         gap: 3rem;
         text-align: left;
     }
-    .mission-text {
+    .mission-text, 
+    .section-header, 
+    .contact-grid {
         text-align: left !important;
+        justify-content: flex-start !important;
     }
     .about-image-wrapper {
         max-width: 250px; /* Even smaller on mobile */
