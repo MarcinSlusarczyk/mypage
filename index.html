@@ -1,120 +1,290 @@
-<link rel="stylesheet" href="style.css">
-<nav id="navbar">
-  <a href="#about-link">O mnie</a>
-  <a href="#work--link">Usługi</a>
-  <a href="#projects--link">Projekty</a>
-  <a href="#contact--link">Kontakt</a>
-</nav>
+<!DOCTYPE html>
+<html lang="pl">
 
-<section id="about-link">
-  <a id="about--link" class="anchor"></a>
-    <div class="container--about">
-      <h2>Marcin Ślusarczyk</h2>
-      <h3>Management information Specialist / VBA Developer</h3>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcin Ślusarczyk | BI DeveloperAutomation & AI </title>
+    <meta name="description"
+        content="Portfolio Marcina Ślusarczyka - Eksperta od automatyzacji n8n, programisty Python i integracji AI.">
+    <link rel="stylesheet" href="style.css?v=1.3">
+</head>
 
-      <div class="personal-container"><img class="img--about" src="images/myphoto.png">
-            <p class="desc-me">
-              Jestem specjalistą w automatyzacji z doświadczeniem w programowaniu w językach VBA i Python.
-              Zajmuję się tworzeniem skryptów i makr automatyzujących pracę w Excelu oraz rozwiązywaniem złożonych problemów związanych z automatyzacją.
-              Posiadam również umiejętności w dziedzinie analizy i przetwarzania danych oraz tworzę proste aplikację webowe z wykorzystaniem języka Python.
-            </p>
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <h3 style="margin:0; font-weight: 800; letter-spacing: -1px;">MŚ<span
+                        style="color:var(--accent)">.</span></h3>
+            </div>
+            <div class="nav-links">
+                <a href="#about">O mnie</a>
+                <a href="#services">Specjalizacje</a>
+                <a href="#projects">Projekty</a>
+                <a href="#contact">Kontakt</a>
+            </div>
         </div>
-        </div>
-</section>
+    </nav>
 
-  <a id="work--link"></a>
-  <section id="work-section">
-    <h2>Usługi</h2>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-badge animate">Dostępny dla nowych projektów</span>
+                    <h1 class="animate">Buduję Inteligentne <br><span class="gradient-text">Automatyzacje
+                            Biznesowe.</span></h1>
+                    <p class="animate" style="animation-delay: 0.2s;">
+                        Specjalizuję się w <strong>automatyzacji procesów</strong>, tworzeniu <strong>stron
+                            internetowych</strong>
+                        oraz wdrażaniu nowoczesnych rozwiązań <strong>AI</strong> i <strong>Python</strong>.
+                        Pomagam firmom oszczędzać czas i skalować działania.
+                    </p>
+                    <div class="animate" style="animation-delay: 0.4s;">
+                        <a href="#contact" class="glass"
+                            style="padding: 1rem 2rem; text-decoration: none; color: white; background: var(--accent); display: inline-block; font-weight: 600; border: 1px solid var(--accent);">
+                            Rozpocznijmy współpracę
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="service-box">
-        <img class="img--excel" src="images/excel.png">
-        <h3>Automatyzacje w Excel - VBA</h3>
-        <ul>
-          <li>Tworzenie skryptów do automatyzacji pracy z arkuszami kalkulacyjnymi</li>
-          <li>Przetwarzanie danych z innych źródeł(CSV/TXT)</li>
-          <li>Tworzenie interaktywnych formularzy <b>(UserForms)</b></li>
-          <li>Tworzenie skryptów do automatycznego wysyłania e-maili lub generowania raportów</li>
-          <li>Tworzenie funkcji i procedur, które mogą być używane w formułach arkusza kalkulacyjnego</li>
-        </ul>
-      </div>
-      <div class="service-box">
-        <img class="img--python" src="images/python.png">
-        <h3>Usługi w języku Python</h3>
-        <ul>
-          <li>Automatyzacje na przeglądarce internetowej (wypełnianie / klikanie formularzy): <b>Selenium</b></li>
-          <li>WebScraping - pobieranie informacji ze stron internetowych i zapisywanie do bazy danych/pliku: <b>BeautifulSoup, Requests</b></li>
-          <li>Tworzenie prostych aplikacji webowych: <b>Flask, Django</b></li>
-          <li>Boty na telegramie: <b>Telegram.ext</b></li>
-          <li>Budowa dashboardów raportowych: <b>Pandas, Plotly, Seaborn</b></li>
-          <li>Przetwarzanie plików excel: <b>Openpyxl</b></li>
-        </ul>
-      </div>
-</section>
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-grid animate">
+                    <div class="about-image-wrapper">
+                        <img src="images/myphoto.png" alt="Marcin Ślusarczyk">
+                    </div>
+                    <div class="about-content">
+                        <h2>Moja <span class="gradient-text">Misja</span></h2>
+                        <p class="mission-text">
+                            Pomagam firmom i przedsiębiorcom odzyskać czas, który tracą na proste, powtarzalne zadania.
+                            Zaczynałem od usprawniania pracy w Excelu, a dziś tworzę inteligentne systemy,
+                            które same odpisują na maile, segregują dokumenty i automatyzują codzienne obowiązki.
+                        </p>
+                    </div>
+                </div>
+                <div class="bento-grid">
+                    <!-- Python & AI (Priority 1) -->
+                    <div class="bento-item glass" style="grid-column: span 2;">
+                        <div class="card-content">
+                            <div class="card-icon">🐍</div>
+                            <h3 class="service-title">Python & AI</h3>
+                            <p class="service-desc">
+                                Wykorzystuję potęgę <strong>Python</strong> do budowy inteligentnych agentów
+                                oraz automatyzacji. Wdrażam <strong>AI</strong> w codziennych procesach biznesowych.
+                            </p>
+                        </div>
+                    </div>
 
-<section id="projects">
-  <a id="projects--link" class="anchor"></a>
-  <h2>Projekty</h2>
-  <div class="container--projects">
+                    <!-- Excel Automations (Priority 2) -->
+                    <div class="bento-item glass">
+                        <div class="card-content">
+                            <div class="card-icon">📊</div>
+                            <h3 class="service-title">Excel & VBA</h3>
+                            <p class="service-desc">
+                                Zaawansowane narzędzia i skrypty <strong>VBA</strong>, które eliminują
+                                żmudną pracę ręczną w arkuszach Excela.
+                            </p>
+                        </div>
+                    </div>
 
-     <div class="project-tile">
-      <h3>Aplikacja w Excelu do administracji</h3>
-      <a title="Explore Layout"><img src="images/excel_administracja.png"  class="img--project"></a>
-       <p class="description--project">Aplikacja służy do wprowadzania danych administracyjnych poprzez interaktywny formularz (userform), dane z formularza zapisują się w arkuszu</p>
-    </div>
+                    <!-- n8n Automations (Priority 3) -->
+                    <div class="bento-item glass">
+                        <div class="card-content">
+                            <div class="card-icon">⚡</div>
+                            <h3 class="service-title">n8n Automatyzacje</h3>
+                            <p class="service-desc">
+                                Projektuję złożone integracje międzysystemowe i automatyczne
+                                procesy za pomocą platformy <strong>n8n</strong>.
+                            </p>
+                        </div>
+                    </div>
 
-    <div class="project-tile">
-      <h3>Aplikacja w Excelu do zarządzania reklamacjami</h3>
-      <a title="Explore Layout"><img src="images/excel_reklamacje.png"  class="img--project"></a>
-      <p class="description--project">Aplikacja służy do wprowadzania danych o reklamacjach poprzez interaktywny formularz (userform), dane z formularza zapisują się w arkuszu</p>
-    </div>
+                    <!-- Web Development (Priority 4) -->
+                    <div class="bento-item glass">
+                        <div class="card-content">
+                            <div class="card-icon">🌐</div>
+                            <h3 class="service-title">Strony WWW</h3>
+                            <p class="service-desc">
+                                Tworzę nowoczesne, szybkie i responsywne strony internetowe
+                                dopasowane do Twojej marki.
+                            </p>
+                        </div>
+                    </div>
 
-    <div class="project-tile">
-      <h3>Strona internetowa dla zakładu Kamieniarskiego</h3>
-      <a href="https://mirkam.pythonanywhere.com/" target="_blank" title="Tetris Loader"><img class="img--project" src="images/mirkam.png"></a>
-       <p class="description--project">Prosta strona internetowa zrobiona we Flasku, z kilkoma podstronami.</p>
-    </div>
+                    <!-- Skalowalne Rozwiązania -->
+                    <div class="bento-item glass">
+                        <div class="card-content">
+                            <div class="card-icon">⚙️</div>
+                            <h3 class="service-title">Skalowanie</h3>
+                            <p class="service-desc">
+                                Buduję architekturę procesów, która rośnie razem z Twoim biznesem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
-    <div class="project-tile">
-      <h3>Aplikacja do zarządzania magazynami na mapie</h3>
-      <a><img src="images/magazyny.png" class="img--project"></a>
-       <p class="description--project">Aplikacja we flasku, która pozwala użytkownikowi połączyć magazyny z miejscowościami na mapie</p>
-    </div>
+        <!-- Projects Section -->
+        <section id="projects" style="background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Wybrane <span class="gradient-text">Projekty</span></h2>
+                </div>
 
-  </div>
-</section>
+                <div class="bento-grid">
+                    <!-- Project 1: AI Email Assistant (New) -->
+                    <div class="bento-item glass" style="grid-column: span 2;">
+                        <div class="project-img-container"
+                            style="height: 250px; overflow: hidden; border-radius: 15px 15px 0 0;">
+                            <a href="#prod1" class="project-img-link">
+                                <img src="images/AI Email Assistant.png" alt="AI Email Assistant"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-content" style="padding: 1.5rem;">
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.4rem;">AI Email Assistant</h3>
+                            <p class="service-desc" style="font-size: 0.95rem;">
+                                Aplikacja do pobierania i odpisywania na maile na podstawie naszych dokumentów.
+                                Korzysta z <strong>lokalnego modelu AI</strong>, dzięki czemu żadne dane poufne
+                                nie wychodzą na zewnątrz.
+                            </p>
+                        </div>
+                    </div>
 
-<section id="contact-section">
+                    <!-- Project 2: Excel Administration -->
+                    <div class="bento-item glass">
+                        <div class="project-img-container"
+                            style="height: 250px; overflow: hidden; border-radius: 15px 15px 0 0;">
+                            <a href="#prod2" class="project-img-link">
+                                <img src="images/excel_administracja.png" alt="System Administracyjny"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-content" style="padding: 1.5rem;">
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Administracja Excel</h3>
+                            <p class="service-desc" style="font-size: 0.9rem;">System zarządzania danymi z
+                                zaawansowanymi UserForms w VBA.</p>
+                        </div>
+                    </div>
 
-  <a id="contact--link" class="anchor"></a>
-  <h2 class="description--me">KONTAKT</h2>
-  <div class="container--profile-links">
-    <a href="mailto:marcink442@gmail.com" target="_blank" title="My Medium Account" class="profile-links">
-       </i>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#c7baad"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-    </a>
+                    <!-- Project 3: Mirkam Stones -->
+                    <div class="bento-item glass">
+                        <div class="project-img-container"
+                            style="height: 250px; overflow: hidden; border-radius: 15px 15px 0 0;">
+                            <a href="#prod3" class="project-img-link">
+                                <img src="images/mirkam.png" alt="Mirkam Stones"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-content" style="padding: 1.5rem;">
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">Mirkam Stones</h3>
+                            <p class="service-desc" style="font-size: 0.9rem;">Nowoczesna strona internetowa dla zakładu
+                                kamieniarskiego.</p>
+                        </div>
+                    </div>
 
-     <a href="https://www.linkedin.com/in/marcin-%C5%9Blusarczyk-16a663142/" target="_blank" title="My Medium Account" class="profile-links">
-       </i>
-       <svg fill="#3486eb" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 viewBox="0 0 455 455" xml:space="preserve">
-<g>
-	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
-	<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
-		 M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
-		c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
-		c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
-		c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
-		z"/>
-</g>
-</svg>
-      </a>
+                    <!-- Project 4: Complaint Management -->
+                    <div class="bento-item glass" style="grid-column: span 2;">
+                        <div class="project-img-container"
+                            style="height: 250px; overflow: hidden; border-radius: 15px 15px 0 0;">
+                            <a href="#prod4" class="project-img-link">
+                                <img src="images/excel_reklamacje.png" alt="System Reklamacji"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </a>
+                        </div>
+                        <div class="card-content" style="padding: 1.5rem;">
+                            <h3 style="margin-bottom: 0.5rem; font-size: 1.2rem;">System Reklamacji</h3>
+                            <p class="service-desc" style="font-size: 0.9rem;">Automatyzacja obiegu dokumentów i
+                                procesowania zgłoszeń wewnątrz firmy.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <a href="https://github.com/MarcinSlusarczyk" target="_blank" title="My CodePen Profile" class="profile-links">
-       </i>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-    </a>
+                <!-- Lightbox Containers (CSS Only) -->
+                <div id="prod1" class="lightbox">
+                    <div class="lightbox-content">
+                        <a href="#projects" class="close-lightbox">&times;</a>
+                        <img src="images/AI Email Assistant.png" alt="AI Email Assistant Full">
+                    </div>
+                </div>
+                <div id="prod2" class="lightbox">
+                    <div class="lightbox-content">
+                        <a href="#projects" class="close-lightbox">&times;</a>
+                        <img src="images/excel_administracja.png" alt="System Administracyjny Full">
+                    </div>
+                </div>
+                <div id="prod3" class="lightbox">
+                    <div class="lightbox-content">
+                        <a href="#projects" class="close-lightbox">&times;</a>
+                        <img src="images/mirkam.png" alt="Mirkam Stones Full">
+                    </div>
+                </div>
+                <div id="prod4" class="lightbox">
+                    <div class="lightbox-content">
+                        <a href="#projects" class="close-lightbox">&times;</a>
+                        <img src="images/excel_reklamacje.png" alt="System Reklamacji Full">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  </div>
+        <!-- Contact Section -->
+        <section id="contact" class="bg-alt">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <h2>Porozmawiajmy o <span class="gradient-text">Twoim Projekcie</span></h2>
+                    <p style="color: var(--text-muted);">Skontaktuj się ze mną, aby omówić inteligentną automatyzację
+                        Twojego biznesu.</p>
+                </div>
 
-    <div class="container--filler-image filler--contact"></div>
-</section>
+                <div class="contact-grid">
+                    <a href="mailto:marcink442@gmail.com" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/marcin-%C5%9Blusarczyk-16a663142/" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/MarcinSlusarczyk" class="social-link">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 .3a12.1 12.1 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.7-2.8 5.6-5.5 6 .5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6A12.1 12.1 0 0 0 12 .3z" />
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--glass-border);">
+        <p style="color: var(--text-muted); font-size: 0.8rem;">
+            &copy; 2024 Marcin Ślusarczyk. Zbudowano z pasją, Pythonem i AI.
+        </p>
+    </footer>
+
+    <script>
+        // Reveal animation on scroll
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('animate');
+            });
+        }, observerOptions);
+        document.querySelectorAll('section, .bento-item').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
