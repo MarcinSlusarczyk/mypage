@@ -309,7 +309,7 @@ section {
     .about-grid {
         grid-template-columns: 1fr !important;
         gap: 3rem;
-        text-align: center;
+        text-align: left; /* Changed from center */
     }
     .about-image-wrapper {
         max-width: 250px; /* Even smaller on mobile */
